@@ -28,5 +28,5 @@ public class Entrenador {
     //Clave foraneas
     @ManyToOne
     @JoinColumn(name = "pueblo_id", nullable = false)
-    private pueblo pueblo;
+    private Pueblo pueblo;
 }
