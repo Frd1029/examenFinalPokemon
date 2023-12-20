@@ -27,4 +27,8 @@ public class pokemonController {
         return pokemonRepositorio.findAll();
     }
 
+    @GetMapping("/tipo/{tipo}")
+    public List<Pokemon> getPokemonByTipo(@PathVariable Tipo_pokemon tipo){
+        return pokemonRepositorio.findByTipoPokemon(tipo);
+    }
 }
