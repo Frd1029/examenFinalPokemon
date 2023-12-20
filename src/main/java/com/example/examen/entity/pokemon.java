@@ -13,7 +13,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class pokemon {
+public class Pokemon {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,5 +28,5 @@ public class pokemon {
     //Clave foraneas
     @ManyToOne
     @JoinColumn(name = "tipo_pokemon", nullable = false)
-    private tipo_pokemon tipo_pokemon;
+    private Tipo_pokemon tipo_pokemon;
 }

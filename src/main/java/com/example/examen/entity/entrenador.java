@@ -12,7 +12,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class entrenador {
+public class Entrenador {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,6 +20,7 @@ public class entrenador {
 
     private String nombre;
     private String apellido;
+    private String email;
     private Date fecha_nacimiento;
     private Date fecha_vinculacion;
     private String uuid;
